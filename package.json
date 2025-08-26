@@ -2,10 +2,10 @@
   "name": "node",
   "version": "1.0.0",
   "main": "server.js",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "build": "tsc",
-    "start": "dist/server.js",
+    "start": "node dist/server.js",
     "dev": "ts-node src/server.ts",
     "lint": "eslint . --ext .js,.ts"
   },
