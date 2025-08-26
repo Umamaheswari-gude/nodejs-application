@@ -2,7 +2,7 @@ name: nodejs-application
 
 on:
   push:
-    branches: [ "feature/express-routes" ]
+    branches: [ "main", "feature/express-routes" ]
   pull_request:
     branches: [ "main" ]
 
