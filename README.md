@@ -1,13 +1,12 @@
 # Nodejs Application
 ---
+Setup the initial express server with multiple endpoints
 
 ## 📑 Table of Contents
 
 - [Description](#-description)
-- [Features](#-features)
 - ⁠[Technologies Used](#-technologies-used)
 - ⁠[Installation](#-installation)
-- [Usage](#-usage)
 - ⁠[Contribution](#-contribution)
 - ⁠[Contact](#-contact)
 - [License](#-license)
@@ -49,14 +48,6 @@ npm run build
 ```
 
 ---
-
-## Usage
-
-
-### Start the CLI application
-```bash
-npm start
-```
 
 
 ## 🤝 Contribution
