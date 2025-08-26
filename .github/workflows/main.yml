@@ -1,0 +1,32 @@
+name: nodejs-application
+
+on:
+  push:
+    branches: [ "feature/express-routes" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run lint
+        run: npm run lint
+
+      - name: Build project
+        run: npm run build
+        
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Release
+        run: echo "Release successfully"
+      - name: Deploy
+        run: echo "Deploy successfully"
