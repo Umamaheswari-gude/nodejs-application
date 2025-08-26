@@ -21,6 +21,9 @@ jobs:
 
       - name: Build project
         run: npm run build
+
+      - name: Build docker image
+        run: docker build -t umamaheswarigude11/demo-app .
         
   deploy:
     runs-on: ubuntu-latest
