@@ -31,14 +31,14 @@ jobs:
       - name: Display containers
         run: docker ps -a
     
-    #   - name: Login to Docker Hub
-    #     uses: docker/login-action@v3
-    #     with:
-    #        username: $ {{ vars.DOCKER_USERNAME }}
-    #        password: $ {{ secrets.DOCKER_TOKEN }}
+      - name: Login to Docker Hub
+        uses: docker/login-action@v3
+        with:
+           username: $ {{ vars.DOCKER_USERNAME }}
+           password: $ {{ secrets.DOCKER_TOKEN }}
     
-    #   - name: Push the image to docker hub
-    #     run: docker push umamaheswarigude11/demo-app
+      - name: Push the image to docker hub
+        run: docker push umamaheswarigude11/demo-app
 
         
   deploy:
