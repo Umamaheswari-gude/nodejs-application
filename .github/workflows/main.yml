@@ -29,7 +29,7 @@ jobs:
         run: docker images
       
       - name: Run container
-        run: docker run -p umamaheswarigude11/demo-app
+        run: docker run -p 4000:3000 umamaheswarigude11/demo-app
 
       - name: Display containers
         run: docker ps -a
