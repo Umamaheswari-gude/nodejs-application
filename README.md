@@ -24,7 +24,7 @@ A simple nodejs application built in **TypeScript** using the express that simul
 | Technology       | Purpose                                     |
 |------------------|---------------------------------------------|
 | **TypeScript**   | Strongly-typed JavaScript for reliability   |
-| **Node.js**      | JavaScript runtime for executing CLI logic  |
+| **Node.js**      | JavaScript runtime for executing            |
 | **ts-node**      | Run TypeScript files directly in terminal   |
 
 ---
@@ -47,7 +47,13 @@ npm install
 npm run build
 ```
 
----
+### 1. How to run
+```bash
+tsc
+```
+```bash
+node dist/server.js
+```
 
 
 ## 🤝 Contribution
