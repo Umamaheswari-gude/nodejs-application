@@ -1,6 +1,6 @@
 services:
     app:
-      build: .
+      build:  .
       image: demo-app:v3
       ports:
          - "4030:3000"
