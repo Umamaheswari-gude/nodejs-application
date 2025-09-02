@@ -1,0 +1,7 @@
+services:
+    app:
+      build: .
+      image: demo-app:v3
+      ports:
+         - 4030:3000
+    restart: always
