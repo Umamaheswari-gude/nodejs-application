@@ -4,4 +4,4 @@ services:
       image: umamaheswarigude11/demo-app:v3
       ports:
          - "4030:3000"
-    restart: always
+      restart: always
